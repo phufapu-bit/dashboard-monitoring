@@ -1,0 +1,24 @@
+/* ----------- Light Mode (default) ----------- */
+:root {
+  --sidebar-bg: #f8f9fb;
+  --sidebar-border: #d8d8d8;
+  --text-primary: #333;
+  --hover-bg: #e2e6ff;
+  --hover-text: #2c3eec;
+}
+
+/* ----------- Dark Mode (ตาม system) ----------- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sidebar-bg: #1e1e2f;
+    --sidebar-border: #2e2e3f;
+    --text-primary: #f1f1f1;
+    --hover-bg: #34344a;
+    --hover-text: #ffffff;
+  }
+}
+
+/* Optional: ปรับให้ smooth */
+.sidebar {
+  transition: background 0.3s ease;
+}
